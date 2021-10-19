@@ -1,9 +1,9 @@
-import Costam from './Button/Button';
+import { Button } from './Button/Button';
 
 function App() {
   return (
     <div className="App">
-      <Costam label='Hello!!!'/>
+      <Button label='Hello!!!'/>
     </div>
   );
 }
