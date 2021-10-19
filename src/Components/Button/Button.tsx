@@ -1,5 +1,7 @@
 ﻿// import React from "react";
 
+import { MouseEventHandler } from "react";
+
 // #95a5a6 concrete
 // #e74c3c alizarin
 // #f39c12 orange
@@ -17,7 +19,8 @@ enum BGColors  {
 type ButtonProps = {
   label: string;
   // bgColoer: 'concrete' | 'alizarin';
-  bgColor?: BGColors;
+  bgColor?: BGColors.orange;
+  onClick?: () => (void);
 }
 
 // function Button(props: ButtonProps) {
@@ -36,11 +39,11 @@ const defaultStyles = {
 }
 
 function Button(props: ButtonProps) {
-    const { label, bgColor } = props;
-    const styles = {...defaultStyles, backgroundColor: bgColor};
+    const { label, bgColor, onClick } = props;
+    const styles = {...defaultStyles};
     // <button {props.label} >Hello</button>
     return (
-      <button style={ styles } >{label}</button>
+      <button style={ styles } onClick={onClick}>{label}</button>
     );
 }
 
