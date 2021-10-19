@@ -46,4 +46,4 @@ function Button(props: ButtonProps) {
 
 // export default Button;
 
-export { Button };
+export { Button, BGColors };

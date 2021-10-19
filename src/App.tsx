@@ -1,9 +1,9 @@
-import { Button } from './Button/Button';
+import { Button, BGColors } from './Button/Button';
 
 function App() {
   return (
     <div className="App">
-      <Button label='Hello!!!'/>
+      <Button label='Hello!!!' bgColor={BGColors.alizarin}/>
     </div>
   );
 }
