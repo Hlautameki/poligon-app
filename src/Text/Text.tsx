@@ -1,16 +1,15 @@
-﻿// import { JsxElement } from "typescript";
-
-type TextProps = {
+﻿type TextProps = {
   // bez prymitywów <span>Hej!</span>
-  // nie wejdzie 1,2,4, "hello", itp
-  // children:JsxElement
-  children: React.Reactnode // to przyjmuje wszystko
+  // nie wejdzie 1,2,4, "hello", itp.
+  // children: JsxElements
+
+  children: React.ReactNode // to przyjmuje wszystko :)
 }
+
+// React.FC
 
 function Text({ children }: TextProps) {
-  return (
-    <p>{ children }</p>
-  )
+  return <p>{children}</p>
 }
 
-export {Text};
+export { Text };
