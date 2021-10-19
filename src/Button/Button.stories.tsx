@@ -14,4 +14,4 @@ MainButton.args = {
   label: 'Hello from main button',
 };
 
-export const SecondButton = () => <Button label="Hello" bgColor="orange" />
+export const SecondButton = () => <Button label="Hello"  />
