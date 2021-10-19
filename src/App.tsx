@@ -1,6 +1,6 @@
-import { Button, BGColors } from './Button/Button';
-import { Text } from './Text/Text';
-import { Counter } from './Counter/Counter';
+import { Button, BGColors } from './Components/Button/Button';
+import { Text } from './Components/Text/Text';
+import { Counter } from './Components/Counter/Counter';
 
 function App() {
   return (

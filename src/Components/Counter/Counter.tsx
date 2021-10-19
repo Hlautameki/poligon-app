@@ -1,4 +1,4 @@
-﻿import { Text } from 'Text/Text'
+﻿import { Text } from 'Components/Text/Text'
 import { useState, useEffect } from 'react';
 
 function Counter() {
